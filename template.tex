@@ -1,0 +1,58 @@
+\documentclass[a4paper,15pt]{article}
+
+% Packages
+\usepackage{amsmath, amssymb}   % Math symbols
+\usepackage{graphicx}           % For images
+\usepackage{tikz}               % For drawings
+\usepackage{geometry}           % Page layout
+\usepackage{fancyhdr}           % Headers and footers
+\usepackage{datetime2}          % Date and time
+
+% Page Layout
+\geometry{margin=1in}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\DTMnow}  % Current date and time
+\cfoot{\thepage}
+
+% Custom Commands
+\newcounter{lecture}
+\setcounter{lecture}{1}
+\newcommand{\lecture}[1]{
+    \section*{Lecture \thelecture: #1}
+    \addtocounter{lecture}{1}
+    \noindent\textbf{Date:} \today \quad \textbf{Time:} \DTMcurrenttime
+    \vspace{0.5cm}
+    \hrule
+    \vspace{0.5cm}
+}
+
+% Important Note Environment
+\newcommand{\important}[1]{
+    \vspace{0.3cm}
+    \noindent\textbf{\underline{Important:}} #1
+    \vspace{0.3cm}
+}
+
+\begin{document}
+
+\lecture{Introduzione al corso di reti logice e architettura dei calcolatori}
+Durante il corso verranno trattati diversi "livellic"
+\itemize
+\item FISICO: reticoli cristallini, elettroni, dove si creano i componenti fisici(non trattati nel corso
+\item ELETTRICO: circuiti, cavi (non trattati nel corso)
+\item LOGICO: valori logici \textbf{astratti}
+\item ARCHITETTURALE: sviluppo a grandi "pezzi" dell' architettura
+\\\\
+* più scendiamo di astrazione più aumenta l'accuratezza delle valutazioni(e l'impegno)
+\\
+* più saliamo sarà l'efficacia di eventuali modifiche
+\subsection{Algebra Booleana}
+L'algebra booleana ha 2 valori: 0 e 1 vero e falso(true and false)
+\begin{table}
+    \begin{tabular}{lll}
+        0 & 0 & 0 \endarray
+    
+\end{tabular}
+\end{table}
+\end{document}
