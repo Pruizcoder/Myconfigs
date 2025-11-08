@@ -84,3 +84,6 @@ xnoremap <silent> <A-j> :move'>+<CR>gv=gv
 nnoremap <silent> <A-J> :<C-u>copy.<CR>
 nnoremap <silent> <A-K> :<C-u>copy-2<CR>
 
+" quick compile
+nnoremap <F3> :w<CR>:VimtexCompileSS<CR>:VimtexView<CR>
+inoremap <F3> <Esc>:w<CR>:VimtexCompileSS<CR>:VimtexView<CR>
