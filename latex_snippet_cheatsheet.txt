@@ -1,0 +1,99 @@
+LaTeX UltiSnips Cheat Sheet
+
+Environments
+-   mm: inline math
+-   eq: equation environment
+-   aln: align environment
+-   cas: cases environment
+-   pmat: pmatrix
+-   bmat: bmatrix
+
+Common Math Commands
+
+-   ff: fraction
+-   sq: square root
+-   abs: absolute value
+-   norm: norm
+-   sum: sum
+-   prod: product
+-   lim: limit
+-   int: integral
+-   dint: indefinite integral
+
+Delimiters
+
+-   rb: round brackets
+-   sb: square brackets
+-   cb: curly braces
+-   ab: angle brackets
+
+Greek Letters## Lists and Tables
+- itz: itemize environment
+- enu: enumerate environment
+- tab: full table environment (with caption and label)
+- tbr: tabular environment
+
+
+-   aa: alpha
+-   bb: beta
+-   gg: gamma
+-   Gg: Gamma
+-   dd: delta
+-   Dd: Delta
+-   ee: epsilon
+-   ll: lambda
+-   ww: omega
+-   Ww: Omega
+
+Sets
+
+-   rr: real numbers
+-   qq: rationals
+-   zz: integers
+-   nn: naturals
+-   cc: complex numbers
+-   set: set builder
+
+Logic
+
+-   iff: iff
+-   imp: implies
+-   and: land
+-   or: lor
+-   neg: negation
+
+Arrows
+
+-   to: to arrow
+-   map: mapsto
+-   ra: Rightarrow
+-   la: Leftarrow
+-   lra: Leftrightarrow
+
+Misc
+
+-   oo: infinity
+-   ddx: derivative
+-   pddx: partial derivative
+-   star: ast
+-   perp: perp
+-   dotp: dot product
+
+ Lists and Tables
+- itz: itemize environment
+- enu: enumerate environment
+- tab: full table environment (with caption and label)
+- tbr: tabular environment
+
+
+ Text and Font Styling
+- bf: \textbf{} (bold text)
+- it: \textit{} (italic text)
+- bbm: \mathbf{} (bold math)
+- mcal: \mathcal{} (calligraphic math)
+- mscr: \mathscr{} (script math)
+
+     Advanced math modes
+
+- def: definition environment
+     - box: box around the LaTeX text
