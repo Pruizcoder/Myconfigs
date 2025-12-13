@@ -1,0 +1,128 @@
+\documentclass[a4paper,11pt]{article}
+
+% Pacchetti essenziali
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{lmodern}
+
+% Matematica
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}  % per equazioni più avanzate
+
+% Grafica e colori
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+% Box evidenziati (molto utili per riassunti)
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, theorems}
+
+% Margini
+\usepackage[a4paper, margin=2cm]{geometry}
+
+% Intestazioni e piè di pagina
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{\nouppercase{\leftmark}}
+
+% Definizione di ambienti personalizzati
+\newtcbtheorem[number within=section]{definizione}{Definizione}{
+  colback=green!5,
+  colframe=green!35!black,
+  fonttitle=\bfseries,
+  separator sign none}{def}
+
+\newtcbtheorem[no counter]{teorema}{Teorema}{
+  colback=blue!5,
+  colframe=blue!35!black,
+  fonttitle=\bfseries}{thm}
+
+\newtcbtheorem[no counter]{esempio}{Esempio}{
+  colback=yellow!10,
+  colframe=orange!70!black,
+  fonttitle=\bfseries}{ex}
+
+\newtcbtheorem[no counter]{nota}{Nota}{
+  colback=gray!10,
+  colframe=gray!50!black,
+  fonttitle=\bfseries}{nota}
+
+% Titolo e metadati
+\title{\textbf{Riassunto di Sistemi Dinamici}}  % Cambia il titolo
+\author{Tuo Nome}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduzione ai Sistemi Dinamici}
+
+\begin{definizione}{Sistema dinamico}{}
+Un sistema dinamico è un modello matematico che descrive l'evoluzione temporale di un sistema fisico o astratto attraverso equazioni differenziali o mappe.
+\end{definizione}
+
+\begin{teorema}{Teorema di esistenza e unicità}{}
+Sia $f(t, x)$ continua in $t$ e localmente lipschitziana in $x$. Allora, per ogni $(t_0, x_0)$, esiste un intervallo temporale in cui la soluzione di
+\[
+\dot{x} = f(t, x), \quad x(t_0) = x_0
+\]
+è unica.
+\end{teorema}
+
+\section{Equazioni differenziali lineari}
+
+Le equazioni differenziali lineari a coefficienti costanti hanno la forma:
+\[
+\dot{\mathbf{x}} = A \mathbf{x} + \mathbf{b}(t)
+\]
+dove $A$ è la matrice di sistema.
+
+La soluzione generale è:
+\[
+\mathbf{x}(t) = e^{At} \mathbf{x}(0) + \int_0^t e^{A(t-\tau)} \mathbf{b}(\tau) \, d\tau
+\]
+
+\begin{esempio}{Sistema massa-molla-smorzatore}{}
+Consideriamo il sistema:
+\[
+m \ddot{x} + c \dot{x} + k x = 0
+\]
+Equazione caratteristica: $m s^2 + c s + k = 0$.
+\end{esempio}
+
+\section{Diagrammi di blocco e funzioni di trasferimento}
+
+La funzione di trasferimento in dominio di Laplace è:
+\[
+G(s) = \frac{Y(s)}{U(s)} = \frac{b_m s^m + \cdots + b_0}{s^n + a_{n-1} s^{n-1} + \cdots + a_0}
+\]
+
+\begin{nota}{}{}
+Per sistemi in retroazione negativa: $T(s) = \frac{G(s)}{1 + G(s)H(s)}$.
+\end{nota}
+
+\section{Analisi di stabilità}
+
+\begin{teorema}{Criterio di Routh-Hurwitz}{}
+Un sistema è asintoticamente stabile se tutti i termini della prima colonna della tabella di Routh sono positivi.
+\end{teorema}
+
+\section{Spazio degli stati}
+
+Rappresentazione:
+\[
+\begin{cases}
+\dot{\mathbf{x}} = A \mathbf{x} + B \mathbf{u} \\
+\mathbf{y} = C \mathbf{x} + D \mathbf{u}
+\end{cases}
+\]
+
+Matrice di trasferibilità: $G(s) = C(sI - A)^{-1}B + D$.
+
+\end{document}
