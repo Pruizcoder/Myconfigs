@@ -27,237 +27,237 @@ endsnippet
 ############################
 
 snippet mm "inline math" i
-\\$$1$$0
+$$1$$0
 endsnippet
 snippet eq "equation environment" b
-\\begin{equation}
+\begin{equation}
     $1
-\\end{equation}
+\end{equation}
 endsnippet
 
 snippet aln "align environment" b
-\\begin{align}
+\begin{align}
     $1
-\\end{align}
+\end{align}
 endsnippet
 
 snippet cas "cases environment" b
-\\begin{cases}
-    $1
-\\end{cases}
+\begin{cases}
+   $1
+\end{cases}
 endsnippet
 
 snippet pmat "pmatrix" b
-\\begin{pmatrix}
+\begin{pmatrix}
     $1
-\\end{pmatrix}
+\end{pmatrix}
 endsnippet
 
 snippet bmat "bmatrix" b
-\\begin{bmatrix}
+\begin{bmatrix}
     $1
-\\end{bmatrix}
+\end{bmatrix}
 endsnippet
 
 ############################
 # Common math commands
 ############################
 snippet ff "fraction" i
-\\frac{$1}{$2}$0
+\frac{$1}{$2}$0
 endsnippet
 
 snippet sq "square root" i
-\\sqrt{$1}$0
+\sqrt{$1}$0
 endsnippet
 
 snippet abs "absolute value" i
-\\lvert $1 \\rvert$0
+\lvert $1 \rvert$0
 endsnippet
 
 snippet norm "norm" i
-\\lVert $1 \\rVert$0
+\lVert $1 \rVert$0
 endsnippet
 
 snippet sum "sum" i
-\\sum_{${1:i=1}}^{${2:n}} $0
+\sum_{${1:i=1}}^{${2:n}} $0
 endsnippet
 
 snippet prod "product" i
-\\prod_{${1:i=1}}^{${2:n}} $0
+\prod_{${1:i=1}}^{${2:n}} $0
 endsnippet
 
 snippet lim "limit" i
-\\lim_{${1:n \\to \\infty}} $0
+\lim_{${1:n \to \infty}} $0
 endsnippet
 
 snippet int "integral" i
-\\int_{${1:a}}^{${2:b}} $0 \\, d${3:x}
+\int_{${1:a}}^{${2:b}} $0 \, d${3:x}
 endsnippet
 
 snippet dint "indef integral" i
-\\int $1 \\, d${2:x}
+\int $1 \, d${2:x}
 endsnippet
 
 ############################
 # Delimiters
 ############################
 snippet rb "round brackets" i
-\\left( $1 \\right)$0
+\left( $1 \right)$0
 endsnippet
 
 snippet sb "square brackets" i
-\\left[ $1 \\right]$0
+\left[ $1 \right]$0
 endsnippet
 
 snippet cb "curly braces" i
-\\left\\{ $1 \\right\\}$0
+\left{ $1 \right}$0
 endsnippet
 
 snippet ab "angle brackets" i
-\\left< $1 \\right>$0
+\left< $1 \right>$0
 endsnippet
 
 ############################
 # Greek letters
 ############################
 snippet aa "alpha" i
-\\alpha
+\alpha
 endsnippet
 
 snippet bb "beta" i
-\\beta
+\beta
 endsnippet
 
 snippet gg "gamma" i
-\\gamma
+\gamma
 endsnippet
 
 snippet Gg "Gamma" i
-\\Gamma
+\Gamma
 endsnippet
 
 snippet dd "delta" i
-\\delta
+\delta
 endsnippet
 
 snippet Dd "Delta" i
-\\Delta
+\Delta
 endsnippet
 
 snippet ee "epsilon" i
-\\epsilon
+\epsilon
 endsnippet
 
 snippet ll "lambda" i
-\\lambda
+\lambda
 endsnippet
 
 snippet ww "omega" i
-\\omega
+\omega
 endsnippet
 
 snippet Ww "Omega" i
-\\Omega
+\Omega
 endsnippet
 
 ############################
 # Set notation
 ############################
 snippet rr "real numbers" i
-\\mathbb{R}
+\mathbb{R}
 endsnippet
 
 snippet qq "rationals" i
-\\mathbb{Q}
+\mathbb{Q}
 endsnippet
 
 snippet zz "integers" i
-\\mathbb{Z}
+\mathbb{Z}
 endsnippet
 
 snippet nn "naturals" i
-\\mathbb{N}
+\mathbb{N}
 endsnippet
 
 snippet cc "complex numbers" i
-\\mathbb{C}
+\mathbb{C}
 endsnippet
 
 snippet set "set builder" i
-\\{ \\; $1 \\; \\mid \\; $2 \\}
+\{ \; $1 \; \mid \; $2 \}
 endsnippet
 
 ############################
 # Logic symbols
 ############################
 snippet iff "iff" i
-\\iff
+\iff
 endsnippet
 
 snippet imp "implies" i
-\\implies
+\implies
 endsnippet
 
 snippet and "land" i
-\\land
+\land
 endsnippet
 
 snippet or "lor" i
-\\lor
+\lor
 endsnippet
 
 snippet neg "negation" i
-\\neg
+\neg
 endsnippet
 
 ############################
 # Arrows
 ############################
 snippet to "to arrow" i
-\\to
+\to
 endsnippet
 
 snippet map "mapsto" i
-\\mapsto
+\mapsto
 endsnippet
 
 snippet ra "Rightarrow" i
-\\Rightarrow
+\Rightarrow
 endsnippet
 
 snippet la "Leftarrow" i
-\\Leftarrow
+\Leftarrow
 endsnippet
 
 snippet lra "Leftrightarrow" i
-\\Leftrightarrow
+\Leftrightarrow
 endsnippet
 
 ############################
 # Misc math symbols
 ############################
 snippet oo "infty" i
-\\infty
+\infty
 endsnippet
 
 snippet ddx "derivative" i
-\\frac{d}{d${1:x}} $0
+\frac{d}{d${1:x}} $0
 endsnippet
 
 snippet pddx "partial derivative" i
-\\frac{\\partial}{\\partial ${1:x}} $0
+\frac{\partial}{\partial ${1:x}} $0
 endsnippet
 
 snippet star "ast" i
-\\ast
+\ast
 endsnippet
 
 snippet perp "perp" i
-\\perp
+\perp
 endsnippet
 
 snippet dotp "dot product" i
-\\langle $1, $2 \\rangle
+\langle $1, $2 \rangle
 endsnippet
 
 ############################
